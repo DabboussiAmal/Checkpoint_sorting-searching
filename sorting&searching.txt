@@ -1,0 +1,20 @@
+PROCEDURAL Insertion_Sort(var arr:ARRAY_OF INTEGER [])
+
+Var
+   i,j,c:INTEGER;
+
+BEGIN
+     j:=2;
+     while j<=arr.length do
+      i:=j-1;
+      c:=arr[j];
+       while i>0 && arr[i] > c do
+       arr[i+1] :=arr[i];
+        i:=i-1
+       END_while
+       arr[i+1]:=c;
+       j:=j+1;
+      END_while
+END
+ 
+     
